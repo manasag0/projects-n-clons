@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body style="align-items: center; display: flex; flex-direction: column;">
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+      <script>
+        // Validate the login form
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+        
+          // Validate the username
+          const username = form.querySelector('input[name="username"]');
+          if (username.value === '') {
+            alert('Please enter a username.');
+            return;
+          }
+        
+          // Validate the password
+          const password = form.querySelector('input[name="password"]');
+          if (password.value === '') {
+            alert('Please enter a password.');
+            return;
+          }
+        
+          // Submit the form
+          form.submit();
+        });
+      </script>
+</body>
+</html>

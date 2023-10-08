@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "nodejs note",
+  "main": "server.js",
+  "scripts": {
+    "test": "node",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "wecome",
+    "note"
+  ],
+  "author": "manasa",
+  "license": "ISC"
+}
