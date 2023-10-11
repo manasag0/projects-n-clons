@@ -1,12 +1,12 @@
+import React from 'react';
+import Signup from './components/Signup';
 
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-
+    <div>
+      <Signup />
     </div>
-  );
+  )
 }
 
 export default App;
